@@ -1,0 +1,41 @@
+# Semua durasi/cooldown dalam DETIK.
+
+elytra-zone:
+  cooldown: 45
+  duration: 12
+  radius: 6.0
+  height: 25.0          # tinggi zona ke atas dari titik pijak
+  particle-points: 60   # kerapatan lingkaran particle
+  color:
+    red: 255
+    green: 50
+    blue: 50
+
+web-trap:
+  cooldown: 30
+  web-duration: 8       # cobweb hilang otomatis setelah N detik
+  web-size: 3           # 3 = area 3x3 (dan 3 tinggi)
+  side-arrow-angle: 12  # sudut panah multishot kiri/kanan (derajat)
+
+trident-blast:
+  cooldown: 25
+  damage: 8.0           # damage ledakan (1 heart = 2.0)
+  radius: 3.0           # jangkauan ledakan (tanpa merusak blok)
+
+time-stop:
+  cooldown: 90
+  expand-time: 3        # lama gelombang particle melebar dari tengah
+  freeze-duration: 6    # lama musuh membeku (dihitung sejak terkena gelombang)
+  radius: 9.0
+  freeze-mobs: true     # mob ikut membeku
+
+messages:
+  prefix: "&8[&bAbility&8] &r"
+  no-permission: "&cKamu tidak punya izin."
+  unknown-ability: "&cAbility tidak dikenal. Pilihan: {list}"
+  activated: "&a{ability} &7diaktifkan!"
+  given: "&aMemberikan &e{ability} &akepada &e{player}&a."
+  reloaded: "&aConfig di-reload."
+  elytra-blocked: "&c&lELYTRA DIBLOKIR &7- keluar dari zona!"
+  time-stopped: "&5&lWAKTU DIHENTIKAN"
+  player-not-found: "&cPlayer tidak ditemukan."
