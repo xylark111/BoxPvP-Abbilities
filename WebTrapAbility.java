@@ -111,7 +111,7 @@ public final class WebTrapAbility implements Listener {
 
         Location loc = center.getLocation().add(0.5, 0.5, 0.5);
         world.spawnParticle(Particle.CLOUD, loc, 35, half + 0.3, 0.6, half + 0.3, 0.02);
-        world.playSound(loc, Sound.BLOCK_COBWEB_PLACE, 1.0F, 0.8F);
+        world.playSound(loc, Sound.BLOCK_WOOL_PLACE, 1.0F, 0.8F);
 
         activeWebs.add(placed);
         Bukkit.getScheduler().runTaskLater(plugin, () -> {
